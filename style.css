@@ -250,6 +250,175 @@ footer {
     .about-grid {
         grid-template-columns: 1fr;
     }
+    
+/* ===== ABOUT PAGE DESIGN ===== */
+
+.about-page {
+    max-width: 1150px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.about-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-heading .welcome {
+    color: #8bcf91;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.about-heading h1 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.about-heading h1 span {
+    color: #8bcf91;
+}
+
+.about-heading > p:last-child {
+    color: #aaaaaa;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.profile-card,
+.about-card {
+    background: #111813;
+    border: 1px solid #26352a;
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.profile-card {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.profile-avatar {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px;
+    border: 3px solid #8bcf91;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1b2b20;
+    color: #8bcf91;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.profile-card h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.profile-card > p {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.profile-divider {
+    height: 1px;
+    background: #344638;
+    margin: 25px 0;
+}
+
+.profile-card .profile-quote {
+    color: #8bcf91;
+    line-height: 1.8;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.about-card h2 {
+    color: #8bcf91;
+    font-size: 19px;
+    margin-bottom: 18px;
+}
+
+.about-card > p {
+    color: #cccccc;
+    line-height: 1.9;
+}
+
+.about-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.about-information div {
+    background: #1a251d;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.about-information span {
+    display: block;
+    color: #91a394;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.about-information strong {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.about-card {
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    border-color: #8bcf91;
+}
+
+.about-back {
+    text-align: center;
+    margin-top: 35px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .about-page {
+        width: 92%;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-information {
+        grid-template-columns: 1fr;
+    }
+
+    .about-heading h1 {
+        font-size: 34px;
+    }
+
+    .about-card {
+        padding: 20px;
+    }
+}
+
 
     .page-heading h1 {
         font-size: 32px;
