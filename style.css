@@ -424,3 +424,161 @@ footer {
         font-size: 32px;
     }
 }
+
+/* ABOUT PAGE */
+.about-page {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 25px;
+}
+
+.about-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.about-heading h1 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.about-heading h1 span {
+    color: #8bcf91;
+}
+
+.about-heading > p:last-child {
+    color: #999999;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.about-profile {
+    background: #111813;
+    border: 1px solid #26352a;
+    border-radius: 14px;
+    padding: 35px 25px;
+    text-align: center;
+    position: sticky;
+    top: 25px;
+}
+
+.about-avatar {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto 22px;
+    border: 3px solid #8bcf91;
+    border-radius: 50%;
+    background: #1b2b20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8bcf91;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.about-profile h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.about-profile > p {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-line {
+    height: 1px;
+    background: #344638;
+    margin: 25px 0;
+}
+
+.about-profile .about-quote {
+    color: #8bcf91;
+    font-style: italic;
+}
+
+.about-details {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.about-section {
+    background: #111813;
+    border: 1px solid #26352a;
+    border-radius: 14px;
+    padding: 25px 28px;
+}
+
+.about-section h2 {
+    color: #8bcf91;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-section > p {
+    color: #bbbbbb;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.about-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.about-data div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 13px;
+    background: #18221b;
+    border-radius: 8px;
+}
+
+.about-data span {
+    color: #8b9a8e;
+    font-size: 13px;
+}
+
+.about-data strong {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.about-back {
+    text-align: center;
+    margin-top: 35px;
+}
+
+@media (max-width: 800px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .about-profile {
+        position: static;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-data {
+        grid-template-columns: 1fr;
+    }
+
+    .about-heading h1 {
+        font-size: 34px;
+    }
+
+    .about-section {
+        padding: 20px;
+    }
+}
