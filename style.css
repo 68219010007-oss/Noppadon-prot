@@ -948,3 +948,104 @@ footer {
     }
 
 }
+
+
+/* SKILLS PAGE - UPDATED */
+
+.skills-section {
+    margin-bottom: 50px;
+}
+
+.skills-title {
+    color: #8bcf91;
+    font-size: 23px;
+    margin-bottom: 22px;
+    padding-left: 14px;
+    border-left: 4px solid #8bcf91;
+}
+
+.skill-card h3,
+.software-card h3,
+.computer-skill-card h3 {
+    color: #8bcf91;
+    margin-bottom: 12px;
+}
+
+.skill-card,
+.software-card {
+    background: #111813;
+    border: 1px solid #26372a;
+    border-radius: 14px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.skill-card:hover,
+.software-card:hover {
+    transform: translateY(-4px);
+    border-color: #8bcf91;
+}
+
+.skill-card p,
+.software-card p,
+.computer-skill-card p {
+    color: #c1c9c2;
+    line-height: 1.8;
+}
+
+.skill-card span {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: #1d3022;
+    color: #8bcf91;
+    font-size: 13px;
+}
+
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.computer-skill-card {
+    background: #111813;
+    border: 1px solid #26372a;
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.skills-summary {
+    margin-top: 40px;
+    padding: 30px;
+    background: #111813;
+    border-left: 4px solid #8bcf91;
+    border-radius: 12px;
+}
+
+.skills-summary h2 {
+    color: #8bcf91;
+    margin-bottom: 15px;
+}
+
+.skills-summary p {
+    color: #c1c9c2;
+    line-height: 1.9;
+}
+
+@media (max-width: 800px) {
+    .software-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .software-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-title {
+        font-size: 19px;
+    }
+}
